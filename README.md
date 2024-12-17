@@ -6,10 +6,6 @@ Aplikacja Tax Calculator umożliwia obliczanie różnych rodzajów podatków ora
 - Kalkulację podatku dochodowego
 - Rejestrację i logowanie użytkowników
 
-## Technologie
-
-Aplikacja jest napisana w języku Kotlin z wykorzystaniem Android SDK.
-
 ## Struktura projektu
 
 Projekt zawiera następujące pliki:
@@ -31,19 +27,6 @@ Aktywność kalkulatora EMI (Equated Monthly Installment), która pozwala oblicz
 
 ### 6. **IncomeTaxCalculatorActivity.kt**  
 Aktywność kalkulatora podatku dochodowego, która umożliwia obliczenie podatku na podstawie dochodu, stawki podatkowej, ulg podatkowych na dzieci oraz osoby zależne.
-
-## Instrukcja instalacji
-
-Aby uruchomić projekt na swoim urządzeniu lokalnym, wykonaj poniższe kroki:
-
-1. Sklonuj repozytorium:
-    ```bash
-    git clone https://github.com/<twoje-nazwa-uzytkownika>/Tax_Calculator.git
-    ```
-
-2. Otwórz projekt w Android Studio.
-
-3. Zbuduj i uruchom aplikację na urządzeniu lub emulatorze Android.
 
 ## Zawartość
 
@@ -76,7 +59,3 @@ Aplikacja składa się z następujących funkcji:
 - **Kotlin:** Język programowania do tworzenia aplikacji Android.
 - **SQLite:** Baza danych do przechowywania danych użytkowników.
 - **Android SDK:** Zestaw narzędzi do tworzenia aplikacji na Androida.
-
-## Licencja
-
-Projekt jest dostępny na licencji MIT. Zobacz plik LICENSE, aby uzyskać szczegóły.
