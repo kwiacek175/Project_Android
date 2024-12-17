@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Kalkulator podatkowy</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="registration_activity_label">Rejestracja</string>
+    <string name="home_activity_label">Strona Główna</string>
+    <string name="income_tax_calculator_activity_label">Kalkulator podatku dochodowego</string>
+    <string name="emi_calculator_activity_label">Kalkulator EMI</string>
+
+    <string-array name="tax_rates">
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+    </string-array>
+
+    <string name="select_tax_rate">Wybierz stawkę podatkową</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".IncomeTaxCalculatorActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator podatku dochodowego"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView"
+        android:hint="Dochód"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTaxRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextIncome"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/tax_rates"
+        android:prompt="@string/select_tax_rate" />
+
+    <EditText
+        android:id="@+id/editTextTaxCreditChildren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTaxRate"
+        android:hint="Ulga dla dzieci"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTaxCreditDependent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTaxCreditChildren"
+        android:hint="Ulga na osobę"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTaxCreditDependent"
+        android:text="Oblicz"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonGoToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:text="Powrót do menu głównego"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

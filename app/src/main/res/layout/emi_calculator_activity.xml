@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EMICalculatorActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator EMI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView"
+        android:hint="Kwota kredytu"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoanAmount"
+        android:hint="Oprocentowanie"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLoanTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextInterestRate"
+        android:hint="Termin pożyczki (w miesiącach)"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextFees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoanTerm"
+        android:hint="Prowizje i koszty"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCalculateEMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFees"
+        android:text="Oblicz"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculateEMI"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonGoToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:text="Powrót do menu głównego"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

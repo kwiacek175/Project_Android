@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KALKULATOR PODATKOWY"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tax"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/buttonIncomeTaxCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator podatku dochodowego"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonEMICalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator EMI"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyloguj"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
